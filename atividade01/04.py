@@ -4,6 +4,9 @@ from bs4 import BeautifulSoup as bs
 from operator import itemgetter
 from time import sleep
 
+# Calcule a densidade populacional de todos os países disponíveis no site
+# http://example.webscraping.com/. Considere que há 25 páginas.
+
 def download(url, quiet=False, num_retries=2):
 	if not quiet:
 		print('Downloading data from:', url)

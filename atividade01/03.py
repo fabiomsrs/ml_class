@@ -1,6 +1,9 @@
 import requests
 from bs4 import BeautifulSoup as bs
 
+# Exiba os dados referentes ao clima de Teresina. Guarde em banco as 5 últimas
+# atualizações. https://www.climatempo.com.br/previsao-dotempo/cidade/264/teresina-pi
+
 def download(url, num_retries=2):
 	print('Downloading data from:', url)
 	page = None

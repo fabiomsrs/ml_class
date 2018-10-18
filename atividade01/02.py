@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup as bs
 from operator import itemgetter
 
+#Faça o mesmo procedimento da questão anterior para a página: http://www.imdb.com/chart/boxoffice
+
 def download(url, num_retries=2):
 	print('Downloading data from:', url)
 	page = None

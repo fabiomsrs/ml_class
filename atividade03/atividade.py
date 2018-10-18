@@ -77,9 +77,9 @@ def questao11():
 	x,y = questao7()
 	x = pd.get_dummies(x)
 
-	y = y.map( {'alto': 1, 'baixo': 0, 'moderado': 0} )
+	y = y.map( {'alto': 1, 'baixo': 0, 'moderado': 0} )	
 	
-	x_treino, x_teste, y_treino, y_teste = train_test_split(x, y, test_size=0.25,random_state=0)	
+	x_treino, x_teste, y_treino, y_teste = train_test_split(x, y.values, test_size=0.25,random_state=0)	
 	
 	modelo = MultinomialNB()	
 	modelo.fit(x_treino, y_treino)

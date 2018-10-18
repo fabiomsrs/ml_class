@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup as bs
 from operator import itemgetter
 
+#Analise a página https://www.rottentomatoes.com/ e exiba: as estreias de filmes das semanas ordenados pela sua cotação
+
 def download(url, num_retries=2):
 	print('Downloading data from:', url)
 	page = None
