@@ -1,0 +1,1 @@
+primeira atividade de TESI, web scraping usando requests e beatifulsoup com python3
