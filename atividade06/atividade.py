@@ -1,6 +1,8 @@
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.model_selection  import cross_val_score
 from scipy.stats import bayes_mvs
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn import datasets
 import pandas as pd
 import numpy as np
 
@@ -16,9 +18,13 @@ def questao1():
 	return x,y
 
 def dados():	
-	modelo = MultinomialNB()
-	k = 10
+	clf = AdaBoostClassifier(n_estimators=50,
+                         learning_rate=1,
+                         random_state=0)
+
 	x,y = questao1()
+	modelo = clf.fit(x, y)
+	k = 10	
 	scores = cross_val_score(modelo, x, y, cv = k)
 
 	cont = 0
@@ -31,5 +37,6 @@ def dados():
 	desvio = scores.std()
 	print("Desvio", desvio)	
 	print(bayes_mvs(scores,0.95))
+
 
 dados()
