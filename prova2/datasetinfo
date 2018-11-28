@@ -1,0 +1,24 @@
+DATASET
+-Nome: Contraceptive Method Choice Data Set
+
+-Volume de dados: 1473 amostras.
+
+-Descrição: Este dataset é um subconjunto de um estudo feito na Indonésia sobre a prevalência métodos contraceptivos. O estudo foi feito baseado em mulheres casadas que não estavam grávidas ou não sabiam se estavam grávidas no momento da intrevista.
+
+-Objetivo: O objetivo é prever qual metodo contraceptivo(no use, long-term methods, or short-term methods) é utilizado com base nas características demograficas e socioeconomica da mulher.
+
+-Colunas: 1. Idade da esposa (numerico) 
+		2. Nível de educação da Esposa (categorico) 1=low, 2, 3, 4=high 
+		3. Nível de educação do marido (categorico) 1=low, 2, 3, 4=high 
+		4. Quantidade de filhos (numerico) 
+		5. Religião da esposa (binario) 0=Non-Islam, 1=Islam 
+		6. Esposa possui trabalho? (binario) 0=Yes, 1=No 
+		7. Ocupação do marido (categorico) 1, 2, 3, 4 
+		8. Standard-of-living index (categorico) 1=low, 2, 3, 4=high 
+		9. Exposição a midia (binario) 0=Good, 1=Not good 
+		10. Metodo contraceptivo utilizado (class attribute) 1=No-use, 2=Long-term, 3=Short-term
+
+-Campos Nulos: nenhum
+
+-Variaveis Categoricas: Nível de educação da Esposa; Nível de educação do marido; Ocupação do marido; Standard-of-living index.
+
