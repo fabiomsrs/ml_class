@@ -87,7 +87,7 @@ def questao11():
 	print(modelo.score(x_teste, y_teste))
 
 def main():
-	questao11()
+	questao8()
 
 if __name__ == '__main__':
 	main()
